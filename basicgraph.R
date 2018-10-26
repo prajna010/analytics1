@@ -49,7 +49,7 @@ lines(density(x))
 plot(density(x), col='red')
 
 #pie
-gender
+gender=sample(c('male','female'), size=30, replace=T, prob=c(.6,.4))
 table(gender)
 pie(table(gender))
 x = c(10,20,40,50)

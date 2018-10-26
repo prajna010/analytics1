@@ -11,6 +11,7 @@ cor(women$height, women$weight)
 plot(women$height, women$weight)
 par(mfrow=c(1,1))
 plot(fit, which=2)
+
 plot(women)
 
 str(women)
@@ -45,6 +46,7 @@ plot(fit, which=1)
 #Normality----
 #Normality of residuals. The residual errors are assumed to be normally distributed.
 plot(density(resid(fit)))
+
 plot(fit, which=2)
 
 #Homoscedasticity----
@@ -55,7 +57,7 @@ plot(fit, which=4)
 
 #Auto-Correlation----
 #Independence of residuals error terms. (Not dependent on previous values)
-durbinWatsonTest(fit)
+car::durbinWatsonTest(fit)
 #pvalue < 0; Ho that there is no correlation (r2=0) is accepted
 
 #Outliers

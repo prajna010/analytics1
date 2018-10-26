@@ -4,14 +4,24 @@ women
 ?women
 str(women)
 fit = lm(weight ~ height, data=women)
+
 ?plot
 #Initial Checks
 cor(women$height, women$weight)
 #there is Strong and Positive Relationship between height and weight
 plot(women$height, women$weight)
+par(mfrow=c(2,2))
+plot(fit)
+
+
+#one by one 
 par(mfrow=c(1,1))
 plot(fit, which=2)
+residuals()
+par(mfrow=c(2,2))
 plot(women)
+
+
 
 str(women)
 head(women)

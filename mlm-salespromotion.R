@@ -14,7 +14,11 @@ head(omni1)
 
 #2nd Method : from CSV file
 #omni2 = read.csv(file.choose())
-
+omni2a = read.csv('./data/salesqty.csv')')
+head(omni2a)
+omni2b = read.csv(file.choose())
+head(omni2
+)
 #3rd Method : from gsheet 
 library(gsheet)
 url = "https://docs.google.com/spreadsheets/d/1h7HU0X_Q4T5h5D1Q36qoK40Tplz94x_HZYHOJJC_edU/edit#gid=1595306231"

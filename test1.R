@@ -3,4 +3,8 @@
 print(women)
 print(mtcars)
 iris
+?iris
+
+
+               
 plot(women)
